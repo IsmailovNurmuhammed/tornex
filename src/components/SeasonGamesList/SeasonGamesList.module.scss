@@ -1,0 +1,65 @@
+.mainBlock {
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    background-color: #423f46;
+    color: #faed26;
+    justify-content: space-between;
+  }
+  .name {
+    width: 100px;
+    font-size: 24px;
+  }
+  .date {
+    font-size: 24px;
+  }
+  .secCon {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .placeIcon {
+    width: 45px;
+    height: 45px;
+  }
+  .placeCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .additionalInfo {
+    width: 500px;
+  //   background-color: #9D8D8E;
+  }
+  .first {
+    color: #ff9700;
+  }
+  .second {
+    color: #9b408f;
+  }
+  .third {
+    color: #39759a;
+  }
+  .fourth {
+    color: #00a97a;
+  }
+  @media screen  and (max-width:700px){
+      .additionalInfo{
+          width: 300px;
+      }
+      .placeCon{
+          flex-direction: column;
+      }
+      .secCon{
+          padding: 5px ;
+          border-left: 1px solid #faed26;
+          border-right: 1px solid #faed26;
+      }
+      .mainBlock{
+          width: 300px;
+      }
+    .placeIcon{
+      width: 25px;
+      height: 25px;
+    }
+  }

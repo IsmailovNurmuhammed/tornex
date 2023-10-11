@@ -1,0 +1,58 @@
+.cards {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px ;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cardHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: red;
+    align-items: center;
+    background: url("../../../public/images/datebg.jpg");
+    background-position: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+        background-color: white;
+        border-radius: 50%;
+        width: 30%;
+        height: auto;
+    }
+}
+.nickName {
+    color: #fff;
+    font-family: Trispace;
+    font-size: 60px;
+    font-size: 4vw;
+    font-weight: 400;
+}
+.cardInfo {
+    background: #f52828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw 0;
+    // padding: 50px 0;
+    span {
+        color: #fff;
+        font-family: Lora;
+        font-size: 2vw;
+        font-weight: 600;
+    }
+}

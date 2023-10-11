@@ -1,0 +1,52 @@
+.container{
+    margin: 0 auto;
+    width: 600px;
+}
+.header{
+    background-color: #423F46;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    // position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 3px solid #FAED26;
+}
+.headerItem{
+    color: #FAED26;
+    font-size: 24px;
+    font-family: "Stalinist One", cursive;
+    flex: 1;
+    text-align: center;
+}
+.headerItem:nth-child(2){
+    flex: 2;
+}
+.con{
+background-size: cover; /* Масштабировать фон по размерам контейнера */
+background-repeat: no-repeat; /* Запретить повторение фонового изображения */
+background-position: center center; 
+width: 100%;
+height: auto;
+overflow: hidden;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        width: 300px;
+    }
+    .headerItem{
+        font-size: 10px;
+    }
+    .header{
+        padding: 10px;
+        width: 300px;
+        border-bottom: 2px solid #FAED26;
+    }
+   
+    
+}

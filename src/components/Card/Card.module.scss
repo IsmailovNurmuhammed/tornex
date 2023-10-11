@@ -1,0 +1,137 @@
+.card {
+  width: auto;
+  height: auto;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  background-color: #423f46;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: fborder 4s infinite;
+  border: 2px solid #faed26;
+}
+.cardHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  align-items: center;
+  background-position: center;
+  justify-content: center;
+  padding: 2vw 0;
+  gap: 10px;
+}
+.nickName {
+  text-align: center;
+  font-family: "Lora", serif;
+  color: #fff;
+  font-family: Trispace;
+  font-size: 60px;
+  font-size: 4vw;
+  font-weight: 400;
+  animation: flash 4s infinite; /* Общая продолжительность 4 секунды */
+  color: #9d8d8e;
+  text-shadow: 0 0 5px #9d8d8e;
+}
+.cardInfo {
+  background: #5B5561;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 0;
+  // padding: 50px 0;
+  span {
+    text-align: center;
+    color: #fff;
+    font-family: Lora;
+    font-size: 2vw;
+    font-weight: 600;
+    animation: flash 4s infinite; /* Общая продолжительность 4 секунды */
+    color: #9d8d8e;
+    text-shadow: 0 0 5px #9d8d8e;
+  }
+}
+
+.avatarImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  object-fit: cover;
+}
+
+.swingingAvatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 4px;
+  height: 200px;
+  // background-color: #f58228;
+  transform-origin: center top; /* Ось вращения в верхней части маятника */
+  animation: swingPendulum 2s linear infinite alternate; /* Повторяющаяся анимация маятника */
+}
+.link{
+  text-decoration: none;
+}
+.pendulumImage {
+  position: absolute;
+  top: -100px;
+  width: 180px;
+  height: 280px;
+  transform-origin: center top;
+}
+
+@keyframes swingPendulum {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes flash {
+  0%,
+  20%,
+  100% {
+    color: #9d8d8e;
+    text-shadow: 0 0 5px #9d8d8e; /* Убирает тень в состоянии "выключено" */
+  }
+  40%,
+  60% {
+    color: #faed26; /* Цвет текста в состоянии "включено" */
+    text-shadow: 0 0 5px #faed26; /* Тень текста в состоянии "включено" */
+  }
+}
+@keyframes fborder {
+    0%,
+    20%,
+    100% {
+      border:2px solid #9d8d8e;
+    }
+    40%,
+    60% {
+      border:2px solid #faed26;/* Тень текста в состоянии "включено" */
+    }
+  }
+@media screen and (max-width:700px){
+    .avatarImage{
+        width: 35px;
+        height: 35px;
+        top: 20px;
+    }
+    .pendulumImage{
+        width: 10px;
+        height: 150px;
+        top: -105px;
+    }
+    .cardHead{
+        padding: 8px 0;
+    }
+    .swingingAvatar{
+        height: 50px;
+    }
+    
+}

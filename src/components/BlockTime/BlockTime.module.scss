@@ -1,0 +1,103 @@
+.container{
+    border-bottom:2px solid #FAED26;
+}
+.mainBlock{
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.iconCon{
+    width: 50px;
+    height: 50px;
+    flex: 1;
+    border-right: 2px solid #FAED26;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.txt{
+    height: 100%;
+    color: #fff;
+    font-size: 32px;
+    display: flex; justify-content: center;
+    align-items: center;
+    flex: 2;
+    border-right: 2px solid #FAED26;
+}
+.num{
+    font-family: "Stick", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    flex: 1;
+}
+ /* Класс для плавного появления */
+.secCon{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border-bottom: 2px solid #FAED26;
+}
+.secBlock{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.snum{
+    font-size:18px;
+}
+.snum:nth-of-type(odd){
+    color: #F69978;
+}
+.snum:nth-of-type(even){
+    color: #45A7CD;
+}
+.expanded{
+        transform: translateY(100%); /* Изначальное положение, контейнер ниже */
+        transition: transform 0.3s ease; /* Плавный переход */
+      
+}
+@media screen and (max-width:700px){
+
+    .iconCon{
+        width: 25px;
+        height: 25px;
+        border-right: 1px solid #FAED26;
+    }
+    .mainBlock{
+        padding: 5px;
+        height: 35px;
+    }
+    .txt{
+        font-size: 14px;
+        border-right: 1px solid #FAED26;
+    }
+    .num{
+        display: block;
+        font-size: 10px;
+    }
+    .container{
+        border-bottom:1px solid #FAED26;
+    }
+    .snum{
+        font-size: 10px;
+    }
+    .vs{
+        width: 20px;
+        height: 20px;
+    }
+    .secBlock{
+        
+        gap: 10px;
+    }
+    .secCon{
+        height: auto;
+        padding: 10px;
+        border-bottom: 0px;
+    }
+
+}

@@ -1,0 +1,45 @@
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#423F46 ;
+    padding: 10px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+}
+.headerTxt{
+    color: #FAED26;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.main{
+    padding: 20px;
+}
+.mainTxt{
+    background-color: #423F46;
+    border-radius: 10px;
+    color: #FAED26;
+    text-align: center;
+    padding: 10px;
+}
+.taimer{
+    padding: 0 20px;
+}
+@media screen and (max-width:700px){
+    .navbar{
+        padding: 5px;
+    }
+    .link img{
+        width: 20px;
+        height: 20px;
+    }
+    .headerTxt{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,35 @@
+.txt {
+  // font-size: 24px;
+  color: #faed26;
+  font-family: "Stick", sans-serif;
+}
+.con {
+  color: #faed26;
+  width: 100%;
+  background-color: #423f46;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.txtCon {
+  font-size: 24px;
+}
+.conTime {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+
+}
+.title {
+  color: #faed26;
+  font-size: 3vw;
+  font-family: "Lora", serif;
+}
+@media screen and (max-width: 700px) {
+  .conTime {
+    gap: 0px;
+  }
+}

@@ -1,0 +1,111 @@
+.TourList {
+    border: 1px solid #ffa233;
+    margin: 20px;
+}
+.head {
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    column-gap: 20px;
+    padding: 5px 0;
+    height: auto;
+}
+.placeIcon{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+}
+
+.title {
+    color: #ffa233;
+    font-family: Lora;
+    font-size: 4vw;
+    font-weight: 500;
+    
+}
+.table {
+    width: 100%;
+    background: url("../../../public/images/reibg.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+.tableName {
+    color: #ffa233;
+    padding: 8px 0;
+    font-family: "Lora", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffa233;
+}
+.tableName:nth-child(1){
+    flex: 1;
+}
+.subTitle{
+    width: 100%;
+    display: flex;
+
+}
+
+.itemCon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 18px 0;
+}
+.tList{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffa233;
+    margin: 15px;
+    font-size: 2vw;
+}
+.first{
+color: #FF9700;
+}
+.second{
+color: #9B408F;
+}
+.third{
+color: #39759A;
+}
+.four{
+color: #00A97A;
+}
+@media screen and (max-width:700px) {
+    .tableName{
+        font-size: 16px;
+        border: 1px solid #ffa233;
+        padding: 5px;
+    }
+    .glavIcon img{
+        width: 35px;
+        height: 35px;
+    }
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .tList{
+        font-size: 16px;
+        margin: 5px;
+    }
+    .itemCon{
+        padding: 5px 0;
+    }
+    .head{
+        gap: 5px;
+    }
+}

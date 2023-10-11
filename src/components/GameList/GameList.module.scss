@@ -1,0 +1,114 @@
+.container {
+  width: 900px;
+  background-color: #5b5561;
+ 
+}
+.conTitle {
+  font-size: 32px;
+  width: 190px;
+  color: #E6E6FA;
+  display: flex;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+.header {
+    background-color: #5b5561;
+position: sticky;
+top: 0;
+  display: flex;
+}
+.headerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.headerItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  width: 100px;
+ color: #E6E6FA;
+ font-family: "Lora", serif;
+}
+.imgCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 8px 0;
+}
+.gameCon {
+  display: flex;
+}
+.gameItem {
+    width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #faed26;
+}
+.gameTitle {
+  width: 190px;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 22px;
+  color: #faed26;
+  margin: 10px 0;
+}
+.first {
+  color: #ff9700;
+}
+.second {
+  color: #9b408f;
+}
+.third {
+  color: #39759a;
+}
+.fourth {
+  color: #00a97a;
+}
+.fifth{
+    color: #E6E6FA;
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: auto;
+    }
+    .header{
+        gap: 5px;
+    }
+    .headerItem{
+        width: 20px;
+        margin-left: 20px;
+        
+    }
+    .conTitle{
+        font-size: 14px;
+        width: 80px;
+    }
+    .gameCon{
+        gap: 5px;
+    }
+    .gameTitle{
+        width: 80px;
+        font-size: 12px;
+    }
+    .gameItem{
+        width: 20px;
+        font-size: 14px;
+    }
+    .imgCon{
+        width: 20px;
+    }
+    .headerImg{
+        width: 20px;
+        height: 20px;
+    }
+    .fifth{
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,113 @@
+.con {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input {
+  width: 200px;
+  height: 35px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+  &:focus {
+    outline: none;
+  }
+}
+/* GameReport.module.scss */
+
+.select {
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.select select {
+  appearance: none; /* Убираем стандартные стили селекта */
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  color: #757575;
+  padding: 10px 15px 10px 10px;
+  border-radius: 8px;
+  width: 205px;
+  font-family: Arial, sans-serif;
+}
+
+.select select:focus {
+  outline: none; /* Убираем обводку при фокусе */
+}
+
+.select button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: #f6f6f6;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.select select::-ms-expand {
+  display: none; /* Убираем стандартную стрелку в Internet Explorer */
+}
+
+.select ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #e10000;
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // right: 0;
+  background: #ff0303;
+  z-index: 2;
+}
+
+.select ul li {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.select ul li:hover {
+  background-color: #ba0000;
+}
+.btn {
+  padding: 5px 10px;
+  font-size: 24px;
+  color: #faed26;
+  background-color: #423f46;
+  border: none;
+  border-radius: 5px;
+  &.active {
+    background-color: #423f46; // Стиль для активных кнопок
+    color: #faed26;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+.btnCon{
+    display: flex;
+    gap :10px;
+    margin: 10px 0;
+}
+.title{
+    color: #423f46;
+    margin-bottom: 20px;
+}
+.container{
+margin: 20px;
+}
+.tt{
+    font-size: 36px;
+}
